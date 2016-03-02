@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <div id='error'>
+    <% if @error %>
+      <%= @error %>
+    <% end %>
+  </div>
+
 <%= yield %>
 
 </body>

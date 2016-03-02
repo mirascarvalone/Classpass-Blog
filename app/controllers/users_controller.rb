@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       log_in(user)
       redirect_to posts_path
     else
+      @error = 'There was an error creating your account.'
       render 'new'
     end
   end
