@@ -4,4 +4,8 @@ class Post < ActiveRecord::Base
   def author_username
     author.username
   end
+
+  validates :content, presence: true
+  validates :title, presence: true
+
 end
