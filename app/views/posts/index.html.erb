@@ -20,7 +20,7 @@
     <tr>
       <td><%= link_to post.title, post_path(post) %></td>
       <td><%= post.content %></td>
-      <% if logged_in? %>
+      <% if logged_in? && post.author == current_user %>
         <td><%= link_to 'Edit Post', edit_post_path(post) %></td>
         <td><%= link_to 'Delete Post', post_path(post),
             method: :delete,
