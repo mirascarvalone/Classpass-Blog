@@ -1,6 +1,6 @@
 <h1> Create an account here </h1>
 
-<%= form_for :user, url: users_path do |f| %>
+<%= form_for @user do |f| %>
   Username: <%= f.text_field :username %><br />
   Password: <%= f.password_field :password %><br />
   Password Confirmation: <%= f.password_field :password_confirmation %><br />
