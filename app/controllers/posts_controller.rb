@@ -16,10 +16,24 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params.merge(author: current_user))
     if @post.save
-      redirect_to post_path(@post)
+      redirect_to @post
     else
       @error = "Your post could not save. Check that the title and content were not blank."
       render 'new'
+    end
+  end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      redirect_to @post
+    else
+      @error = "Your post edits could not be saved."
+      render 'edit'
     end
   end
 

@@ -1,0 +1,13 @@
+<% if @post.author == current_user %>
+
+  <h1>Editing Post</h1>
+
+  <%= form_for @post, method: :patch do |f| %>
+    Title: <%= f.text_field :title %><br />
+    Content: <%= f.text_area :content %><br />
+    <%= f.submit %>
+  <% end %>
+
+<% else %>
+  <h1> You cannot access this page. </h1>
+<% end %>
