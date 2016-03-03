@@ -87,8 +87,8 @@ textarea {
   border-color: #636AF2;
   padding: 10px;
   background-color: #A7C1D9;
+  vertical-align: top;
 }
-
 
 #back-to-posts {
   background-color: #5F7317;
@@ -102,4 +102,8 @@ textarea {
 #back-to-posts a {
   text-decoration: none;
   color: white;
+}
+
+#show-post input {
+  width: 20%;
 }

@@ -21,5 +21,7 @@
 </table>
 
 <% if logged_in? %>
-  <%= link_to 'Create a Post', new_post_path %>
+  <div id='back-to-posts'>
+    <%= link_to 'Create a Post', new_post_path %>
+  </div>
 <% end %>
