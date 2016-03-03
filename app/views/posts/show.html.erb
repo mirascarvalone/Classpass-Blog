@@ -1,6 +1,11 @@
-<h1> Post: <%=@post.title %> </h1>
-<h3> Written by: <%=@post.author_username %> </h3>
+<div id='show-post'>
+  <h1> <%=@post.title %> </h1>
+  <h3> Written by: <%=@post.author_username %> </h3>
 
-<h2> <%=@post.content %> </h2>
+  <h2> <%=@post.content %> </h2>
 
-<%= link_to 'Back to Posts', posts_path %>
+</div>
+
+<div id='back-to-posts'>
+  <%= link_to 'Back to Posts', posts_path %>
+</div>
