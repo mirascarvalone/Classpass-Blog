@@ -5,7 +5,7 @@
     <%= form_for :session do |f| %>
       Username: <%= f.text_field :username %><br />
       Password: <%= f.password_field :password %><br />
-      <%= f.submit 'Log In' %>
+      <%= f.submit 'Log In', :id => 'button' %>
     <% end %>
   </div>
 <% else %>

@@ -2,7 +2,7 @@
   <%= form_for @post do |f| %>
     Title: <%= f.text_field :title %><br />
     Content: <%= f.text_area :content %><br />
-    <%= f.submit %>
+    <%= f.submit 'Create Review', :id => 'button' %>
   <% end %>
 <% else %>
   <h1> You cannot access this page. </h1>

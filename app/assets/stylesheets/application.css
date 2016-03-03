@@ -81,7 +81,17 @@ body {
   background-color: #A7C1D9;
 }
 
-#test {
+#button {
   font-family: 'Courier New';
-  font-size: 20px;
+  font-size: 15px;
+  background-color: #5F7317;
+  margin: 10px;
+}
+
+input[type="text"] {
+  font-family: 'Courier New';
+}
+
+textarea {
+  font-family: 'Courier New';
 }
