@@ -1,7 +1,7 @@
 <% if logged_in? %>
   <div id='show-post'>
     <%= form_for @post do |f| %>
-      Title: <%= f.text_field :title %><br />
+      Title: <%= f.text_field :title %><br /><br />
       Content: <%= f.text_area :content, rows: "10", cols: "30" %><br />
       <%= f.submit 'Create Review', :id => 'button' %>
     <% end %>

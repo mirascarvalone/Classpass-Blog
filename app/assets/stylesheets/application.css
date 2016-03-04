@@ -73,10 +73,12 @@ body {
 
 input[type="text"] {
   font-family: 'Courier New';
+  font-size: 15px;
 }
 
 textarea {
   font-family: 'Courier New';
+  font-size: 15px;
 }
 
 #show-post {
@@ -106,4 +108,25 @@ textarea {
 
 #show-post input {
   width: 20%;
+}
+
+.post li {
+  list-style-type: none;
+}
+
+.post {
+  text-align: center;
+  margin: 100px 200px 100px 200px;
+  /*margin: 10% 20% 10% 20%;*/
+  border: 10px solid;
+  border-radius: 10px;
+  border-color: #636AF2;
+  padding: 10px;
+  background-color: #A7C1D9;
+  vertical-align: top;
+}
+
+.post a {
+  text-decoration: none;
+  color: white;
 }
