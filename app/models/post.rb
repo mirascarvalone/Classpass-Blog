@@ -14,5 +14,6 @@ class Post < ActiveRecord::Base
   validates :content, presence: true
   validates :title, presence: true
   validates :studio, presence: true
+  validates :rating, {:numericality => {greater_than_or_equal_to: 1, less_than_or_equal_to: 10}}
 
 end

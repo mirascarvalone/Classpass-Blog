@@ -2,6 +2,7 @@
   <ol class='post'>
     <li><%= link_to post.studio_name, post_path(post) %></li><br/>
     <li><%=post.title%></li>
+    <li>Rating: <%=post.rating%></li>
     <li>Written by: <%=post.author_username%> on <%=long_form_date(post.updated_at)%> </li><br/>
     <li><%= post.content %></li>
     <% if post.author == current_user %>
