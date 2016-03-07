@@ -8,28 +8,29 @@
 </head>
 <body>
 
-  <div id='navigation-bar'>
-    <ul>
-      <li id='logo'><%= link_to "CLASSPASS REVIEW BLOG", posts_path %></li>
-      <% if !logged_in? %>
-        <div id='signin'>
-          <li><%= link_to "Register", register_path %></li>
-          <li><%= link_to "Log In", login_path %></li>
-        </div>
-      <% else%>
-      <div id='signout'>
-        <li>Welcome <%=current_user.username %>!</li>
-        <li><%= link_to "Log out", logout_path, method: :delete %><li>
+<div id='navigation-bar'>
+  <ul>
+    <li id='logo'><%= link_to "CLASSPASS REVIEW BLOG", posts_path %></li>
+    <% if !logged_in? %>
+      <div id='signin'>
+        <li><%= link_to "Register", register_path %></li>
+        <li><%= link_to "Log In", login_path %></li>
       </div>
-      <% end%>
-    </ul>
-  </div>
+    <% else%>
+    <div id='signout'>
+      <li>Welcome <%=current_user.username %>!</li>
+      <li><%= link_to "Write a review", new_post_path %></li>
+      <li><%= link_to "Log out", logout_path, method: :delete %><li>
+    </div>
+    <% end%>
+  </ul>
+</div>
 
-  <div id='error'>
-    <% if @error %>
-      <%= @error %>
-    <% end %>
-  </div>
+<div id='error'>
+  <% if @error %>
+    <%= @error %>
+  <% end %>
+</div>
 
 <%= yield %>
 
