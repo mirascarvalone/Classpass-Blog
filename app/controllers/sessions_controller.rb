@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     user = User.find_by(username: params[:session][:username])
     if user && user.authenticate(params[:session][:password])
       log_in(user)
-      redirect_to posts_path
+      redirect_to user
     else
       @error = 'There was an error signing in. Check that your username and password are correct.'
       render 'new'
