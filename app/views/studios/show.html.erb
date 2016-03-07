@@ -1,0 +1,5 @@
+<%= render partial: "studio_info", layout: false, locals: {studio: @studio} %>
+
+<div id='separator'> Reviews for <%= @studio.name %> </div>
+
+<%= render partial: "./posts/post_list", layout: false, object: @posts %>

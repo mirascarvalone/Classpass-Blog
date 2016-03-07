@@ -130,3 +130,14 @@ textarea {
   text-decoration: none;
   color: white;
 }
+
+#separator {
+  text-align: center;
+  margin: 100px 200px 100px 200px;
+  border: 10px solid;
+  border-radius: 10px;
+  border-color: #636AF2;
+  padding: 10px;
+  background-color: #5F7317;
+  vertical-align: top;
+}
