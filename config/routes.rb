@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # User creation
   resources :users, only: [:new, :create, :show]
+
   get 'register' => 'users#new'
 
   # Logging in and out
@@ -10,4 +11,6 @@ Rails.application.routes.draw do
 
   # Posts paths
   resources :posts
+  # Studios paths
+  resources :studios, only: [:index, :show]
 end

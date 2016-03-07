@@ -1,0 +1,7 @@
+<% @studios.each do |studio| %>
+  <ol class='post'>
+    <li><%= link_to studio.name, studio %></li><br/>
+    <li><%= studio.address%></li><br/>
+    <li><%= studio.class_type%></li><br/>
+  </ol>
+<% end %>
