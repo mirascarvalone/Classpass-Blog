@@ -1,16 +1,20 @@
-<div class='post'>
-  <h1> Hi <%=@user.username %> !<h1>
-  <% if @posts.empty? %>
-    <h1> You haven't written any reviews yet. Want to write one? </h1>
-    <%= render partial: "./posts/new", layout: false%>
-  <% else %>
-    <% if @posts.count == 1 %>
-      <h1> You have written one post. <h1>
+<% if current_user == @user %>
+  <div class='post'>
+    <h1> Hi <%=@user.username %> !<h1>
+    <% if @posts.empty? %>
+      <h1> You haven't written any reviews yet. Want to write one? </h1>
+      <%= render partial: "./posts/new", layout: false%>
     <% else %>
-      <h1> You have written <%=@posts.count%> posts. </h1>
+      <% if @posts.count == 1 %>
+        <h1> You have written one post. <h1>
+      <% else %>
+        <h1> You have written <%=@posts.count%> posts. </h1>
+      <% end %>
+      <h1> Your average rating is <%=@user.average_rating %> </h1>
     <% end %>
-    <h1> Your average rating is <%=@user.average_rating %> </h1>
-  <% end %>
-</div>
+  </div>
 
-<%= render partial: "./posts/post_list", layout: false, object: @posts %>
+  <%= render partial: "./posts/post_list", layout: false, object: @posts %>
+<% else %>
+  <h1> You cannot access this page </h1>
+<% end %>
