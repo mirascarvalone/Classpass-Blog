@@ -1,0 +1,13 @@
+<% if logged_in? %>
+  <div id='show-post'>
+    <%= form_for @post do |f| %>
+      Studio: <%= f.collection_select :studio_id, Studio.order(:name),:id,:name, include_blank: false %><br/><br/>
+      Rating: <%= f.select :rating, (1..10) %><br/><br/>
+      Title: <%= f.text_field :title %><br/><br/>
+      Content: <%= f.text_area :content, rows: "10", cols: "30" %><br/>
+      <%= f.submit 'Create Review', :id => 'button' %>
+    <% end %>
+  </div>
+<% else %>
+  <h1> You cannot access this page. </h1>
+<% end %>
