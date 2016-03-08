@@ -1,28 +1,8 @@
-== README
+This app is a review site for studios on Classpass, built using Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Future features:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+-- Pull studios dynamically from Classpass website
+-- Add tests
+-- Filter reviews by class category or number of stars
+-- Add a map showing studio location to its page (potentially also show travel time from user's location)
