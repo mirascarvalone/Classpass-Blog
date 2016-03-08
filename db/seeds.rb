@@ -5,7 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Post.create(title: "DBC", content: "is great", author_id: 1)
-Post.create(title: "Friday", content: "is the best day", author_id: 2)
-User.create(username: "mira", password: "pass")
-User.create(username: "dbc", password: "password")
+
+
+Studio.create(name: "ChaiseFitness - Flatiron", address: "40 E 23rd St, Fl 3, New York, NY 10010", class_type: "Pilates")
+Studio.create(name: "Uplift Studios", address: "24 W 23rd St, Fl 2, New York, NY 10010", class_type: "Strength Training")
+Studio.create(name: "Barry's Bootcamp - Tribeca", address: "1 York St, New York, NY 10013", class_type: "Strength Training")
+Studio.create(name: "Xtend Barre - Brooklyn Heights", address: "147 Remsen St, Fl 2, Brooklyn, NY 11201", class_type: "Barre")
+Studio.create(name: "CityRow", address: "80 5th Ave, Rm 1501, New York, NY 10011", class_type: "Rowing")
+Studio.create(name: "AQUA Studio NY", address: "78 Franklin St, New York, NY 10013", class_type: "Cycling")
+Studio.create(name: "SWERVE Fitness", address: "30 W 18th St, New York, NY 10011", class_type: "Cycling")
+Studio.create(name: "Flywheel - Flatiron", address: "39 W 31st St, New York, NY 10010", class_type: "Cycling")
+Studio.create(name: "Pure Barre - Park Slope", address: "178 5th Ave, Brooklyn, NY 11217", class_type: "Barre")
+Studio.create(name: "Brooklyn Bodyburn - Cobble Hill", address: "296 Court St, Brooklyn, NY 11231", class_type: "Strength Training")
+Studio.create(name: "Physique 57 - Spring Street", address: "161 Avenue of the Americas, New York, NY 10013", class_type: "Barre")
