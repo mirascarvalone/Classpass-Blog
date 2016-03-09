@@ -2,14 +2,7 @@
 
   <div id="map" style='width: 800px; height: 400px;'></div>
 
-  <script type="text/javascript">
-    handler = Gmaps.build('Google');
-    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-     markers = handler.addMarkers(<%=raw @map_data.to_json %>);
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-    });
-  </script>
+
 
 <div id='separator'> Reviews for <%= @studio.name %> </div>
 
