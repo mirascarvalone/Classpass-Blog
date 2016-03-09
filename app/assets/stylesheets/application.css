@@ -151,7 +151,7 @@ textarea {
 
 #map-container {
   margin: auto;
-  /*position: static;*/
+  position: static;
   top: 0;
   /*transform: inherit !important;*/
   width: 60%;
