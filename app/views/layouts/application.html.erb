@@ -3,19 +3,18 @@
 <head>
   <title>ClassPassBlog</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-
   <%= javascript_include_tag 'application' %>
-
   <script src="//maps.google.com/maps/api/js?v=3.18&sensor=false&client=&key=&libraries=geometry&language=&hl=&region="></script>
-<script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js"></script>
-
+  <script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <div id='navigation-bar'>
   <ul>
-    <li id='logo'><%= link_to "CLASSPASS REVIEW BLOG", posts_path %></li>
+    <li class='logo'>CLASSPASS REVIEW BLOG</li>
+    <li class='logo'><%= link_to "Studios", studios_path %></li>
+    <li class='logo'><%= link_to "Reviews", posts_path %></li>
     <% if !logged_in? %>
       <div id='signin'>
         <li><%= link_to "Register", register_path %></li>

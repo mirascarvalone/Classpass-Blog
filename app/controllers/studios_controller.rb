@@ -6,6 +6,7 @@ class StudiosController < ApplicationController
   def show
     @studio = Studio.find(params[:id])
     @posts = Post.where(studio: @studio)
+    @post = Post.new
     @map_data = Gmaps4rails.build_markers(@studio) do |studio, marker|
      marker.lat studio.latitude
      marker.lng studio.longitude
