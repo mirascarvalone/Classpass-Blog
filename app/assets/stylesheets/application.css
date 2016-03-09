@@ -141,3 +141,18 @@ textarea {
   background-color: #5F7317;
   vertical-align: top;
 }
+
+#map {
+  border: 10px solid;
+  border-radius: 10px;
+  border-color: #636AF2;
+  /*transform: inherit !important;*/
+}
+
+#map-container {
+  margin: auto;
+  position: static;
+  top: 0;
+  /*transform: inherit !important;*/
+  width: 60%;
+}
