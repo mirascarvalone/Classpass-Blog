@@ -6,6 +6,9 @@ class Studio < ActiveRecord::Base
   after_validation :geocode
 
   def average_rating
-    posts.average('rating')
+    if posts.average('rating')
+      posts.average('rating').round(2)
+    end
   end
+
 end
