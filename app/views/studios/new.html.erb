@@ -1,0 +1,12 @@
+<% if logged_in? %>
+  <div id='show-post'>
+    <%= form_for @studio do |f| %>
+      Studio Name: <%= f.text_field :name %><br/><br/>
+      Address: <%= f.text_field :address %><br/><br/>
+      Class Type: <%= f.text_field :class_type %><br/><br/>
+      <%= f.submit 'Create Studio', :id => 'button' %>
+    <% end %>
+  </div>
+<% else %>
+  <h1> You cannot access this page. </h1>
+<% end %>

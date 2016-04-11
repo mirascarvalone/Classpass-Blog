@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   resources :posts
 
   # Studios paths
-  resources :studios, only: [:index, :show]
+  resources :studios, only: [:index, :show, :new, :create]
 end
