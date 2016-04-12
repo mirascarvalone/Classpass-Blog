@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   include SessionsHelper
 
   def index
-    @posts = Post.all.order(:updated_at)
+    @posts = Post.all.order(updated_at: :desc)
   end
 
   def show
