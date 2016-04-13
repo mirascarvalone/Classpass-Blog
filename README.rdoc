@@ -1,8 +1,8 @@
-This app is a review site for studios on Classpass, built using Rails.
+This app is a review site for studios on Classpass, built using Rails, and deployed using Heroku here: https://damp-mesa-43044.herokuapp.com .
 
 Future features:
 
 * Pull studios dynamically from Classpass website
 * Add tests
 * Filter reviews by class category or number of stars
-* Add a map showing studio location to its page (potentially also show travel time from user's location)
+* Enhance map functionality to show travel time to studio
